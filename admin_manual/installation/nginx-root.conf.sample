@@ -1,3 +1,31 @@
+#### NOTE: READ (AND DO NOT DELETE) THIS COMMENT BLOCK IF YOU WISH TO MAKE YOUR LIFE - AND FUTURE NEXTCLOUD UPGRADES - EASIER
+####
+#### This community provided example configuration should continue to work with newer versions of Nextcloud *unless* the 
+#### NGINX example configuration found in the Administration Manual for the version of Nextcloud you're upgrading to changes.
+####
+#### **This does happen from time to time in order to accommodate to support new functionality or address bugs.**
+####
+#### To reduce the chance of a broken deployments, you are encouraged to check - before every update or upgrade 
+#### (e.g. particularly major ones like v25->v26) - for changes to the example NGINX configuration. You can do so by checking 
+#### both of the following URLs (or their equivalent if things get reorganized) to identify webserver related breaking changes
+### and revisions made to the NGINX sample configurations since the last release:
+####
+####    https://docs.nextcloud.com/server/latest/admin_manual/release_schedule.html#critical-changes
+####    https://docs.nextcloud.com/server/latest/admin_manual/installation/nginx.html
+####
+#### If you ignore this advice (or simply forget), you may not notice problems right away, but you're *very*
+#### likely to *eventually* encounter problems. It may be several upgrades down the road so if you start
+#### experiencing issues after updating or upgrading Nextcloud please refer to the above URLs to identify
+#### changes you may need to make in your environment.
+#### 
+#### For additional troubleshooting assistance, including personalized assistance from the community 
+#### regarding this (or your customized) configuration, visit:
+####
+####    https://help.nextcloud.com/
+####
+#### This comment block exists solely to serve as a useful reminder to yourself during future 
+#### troubleshooting. :-)
+
 upstream php-handler {
     server 127.0.0.1:9000;
     #server unix:/var/run/php/php7.4-fpm.sock;
